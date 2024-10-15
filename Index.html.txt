@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Exchange</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Crypto Exchange</h1>
+        </header>
+        <main>
+            <section class="converter">
+                <h2>Currency Converter</h2>
+                <div class="converter-widget">
+                    <input type="number" id="amount" placeholder="Amount" />
+                    <select id="from-coin">
+                        <option value="BTC">Bitcoin (BTC)</option>
+                        <option value="ETH">Ethereum (ETH)</option>
+                        <option value="USDT">Tether (USDT)</option>
+                        <option value="LTC">Litecoin (LTC)</option>
+                        <option value="XRP">Ripple (XRP)</option>
+                        <option value="ADA">Cardano (ADA)</option>
+                        <option value="DOGE">Dogecoin (DOGE)</option>
+                        <option value="BNB">Binance Coin (BNB)</option>
+                        <option value="SOL">Solana (SOL)</option>
+                        <option value="DOT">Polkadot (DOT)</option>
+                    </select>
+                    <span>to</span>
+                    <select id="to-coin">
+                        <option value="BTC">Bitcoin (BTC)</option>
+                        <option value="ETH">Ethereum (ETH)</option>
+                        <option value="USDT">Tether (USDT)</option>
+                        <option value="LTC">Litecoin (LTC)</option>
+                        <option value="XRP">Ripple (XRP)</option>
+                        <option value="ADA">Cardano (ADA)</option>
+                        <option value="DOGE">Dogecoin (DOGE)</option>
+                        <option value="BNB">Binance Coin (BNB)</option>
+                        <option value="SOL">Solana (SOL)</option>
+                        <option value="DOT">Polkadot (DOT)</option>
+                    </select>
+                    <button id="convert-btn">Convert</button>
+                </div>
+                <p id="conversion-result"></p>
+            </section>
+
+            <section class="coin-list">
+                <h2>Available Coins</h2>
+                <ul id="coins">
+                    <li>
+                        <img src="btc.png" alt="Bitcoin" />
+                        <span>Bitcoin (BTC)</span>
+                        <button class="buy-btn">Buy</button>
+                        <button class="sell-btn">Sell</button>
+                    </li>
+                    <li>
+                        <img src="eth.png" alt="Ethereum" />
+                        <span>Ethereum (ETH)</span>
+                        <button class="buy-btn">Buy</button>
+                        <button class="sell-btn">Sell</button>
+                    </li>
+                    <li>
+                        <img src="usdt.png" alt="Tether" />
+                        <span>Tether (USDT)</span>
+                        <button class="buy-btn">Buy</button>
+                        <button class="sell-btn">Sell</button>
+                    </li>
+                    <li>
+                        <img src="ltc.png" alt="Litecoin" />
+                        <span>Litecoin (LTC)</span>
+                        <button class="buy-btn">Buy</button>
+                        <button class="sell-btn">Sell</button>
+                    </li>
+                    <li>
+                        <img src="xrp.png" alt="Ripple" />
+                        <span>Ripple (XRP)</span>
+                        <button class="buy-btn">Buy</button>
+                        <button class="sell-btn">Sell</button>
+                    </li>
+                    <li>
+                        <img src="ada.png" alt="Cardano" />
+                        <span>Cardano (ADA)</span>
+                        <button class="buy-btn">Buy</button>
+                        <button class="sell-btn">Sell</button>
+                    </li>
+                    <li>
+                        <img src="doge.png" alt="Dogecoin" />
+                        <span>Dogecoin (DOGE)</span>
+                        <button class="buy-btn">Buy</button>
+                        <button class="sell-btn">Sell</button>
+                    </li>
+                    <li>
+                        <img src="bnb.png" alt="Binance Coin" />
+                        <span>Binance Coin (BNB)</span>
+                        <button class="buy-btn">Buy</button>
+                        <button class="sell-btn">Sell</button>
+                    </li>
+                    <li>
+                        <img src="sol.png" alt="Solana" />
+                        <span>Solana (SOL)</span>
+                        <button class="buy-btn">Buy</button>
+                        <button class="sell-btn">Sell</button>
+                    </li>
+                    <li>
+                        <img src="dot.png" alt="Polkadot" />
+                        <span>Polkadot (DOT)</span>
+                        <button class="buy-btn">Buy</button>
+                        <button class="sell-btn">Sell</button>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

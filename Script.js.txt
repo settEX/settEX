@@ -1,0 +1,22 @@
+document.getElementById("convert-btn").addEventListener("click", function () {
+    const amount = parseFloat(document.getElementById("amount").value);
+    const fromCoin = document.getElementById("from-coin").value;
+    const toCoin = document.getElementById("to-coin").value;
+
+    // Sample conversion rates for demonstration
+    const rates = {
+        BTC: { ETH: 15, USDT: 40000, LTC: 200, XRP: 80000, ADA: 700000, DOGE: 4000000, BNB: 1200, SOL: 2000, DOT: 300 },
+        ETH: { BTC: 0.066, USDT: 2600, LTC: 13.3, XRP: 53333, ADA: 46667, DOGE: 266667, BNB: 80, SOL: 133.33, DOT: 20 },
+        USDT: { BTC: 0.000025, ETH: 0.00038, LTC: 0.00025, XRP: 0.0000125, ADA: 0.000014, DOGE: 0.00000025, BNB: 0.0002, SOL: 0.0005, DOT: 0.001 },
+        LTC: { BTC: 0.005, ETH: 0.075, USDT: 4.99, XRP: 4000, ADA: 30000, DOGE: 200000, BNB: 2, SOL: 10, DOT: 2 },
+        // Add additional rates here
+    };
+
+    if (fromCoin === toCoin) {
+        document.getElementById("conversion-result").innerText = "Select different coins to convert.";
+        return;
+    }
+
+    const convertedAmount = amount * (rates[fromCoin][toCoin] || 0);
+    if (convertedAmount > 0) {
+        document.getElementById("conversion-result").innerText = `Converted Amount:
